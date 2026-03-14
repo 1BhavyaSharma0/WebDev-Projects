@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify - Online Learning Platform</title>
+    <link rel="stylesheet" href="Capstone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="main-header">
+        <div class="logo">Learnify</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-login">Login</button>
+            <button class="btn btn-signup">Sign Up</button>
+        </div>
+        <div class="menu-toggle" aria-label="Toggle Navigation">☰</div>
+    </header>
+
+    <main id="main-content">
+        
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="fade-in">Unlock Your Potential with Online Learning</h1>
+                <p>
+                    Join thousands of learners and access top-rated courses from expert instructors. Learn anytime, anywhere.
+                </p>
+                
+                <form class="hero-search">
+                    <input type="search" placeholder="What do you want to learn?" aria-label="Course Search">
+                    <button type="submit" class="btn btn-primary">Find Courses</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="categories" class="categories-section">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <article class="category-card">
+                    <div class="icon">💻</div>
+                    <h3>Development</h3>
+                </article>
+                <article class="category-card">
+                    <div class="icon">🎨</div>
+                    <h3>Design</h3>
+                </article>
+                <article class="category-card">
+                    <div class="icon">📈</div>
+                    <h3>Business</h3>
+                </article>
+                <article class="category-card">
+                    <div class="icon">🗣️</div>
+                    <h3>Languages</h3>
+                </article>
+                <article class="category-card">
+                    <div class="icon">📚</div>
+                    <h3>Academics</h3>
+                </article>
+                <article class="category-card">
+                    <div class="icon">🎵</div>
+                    <h3>Music</h3>
+                </article>
+                <article class="category-card">
+                    <div class="icon">🧘</div>
+                    <h3>Lifestyle</h3>
+                </article>
+                <article class="category-card">
+                    <div class="icon">🔬</div>
+                    <h3>Science</h3>
+                </article>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <h2>Featured Courses</h2>
+
+            <div class="course-filters">
+                <label for="level">Level:</label>
+                <select id="level">
+                    <option>All</option>
+                </select>
+                <label for="price">Price:</label>
+                <select id="price">
+                    <option>All</option>
+                </select>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="certificate">
+                    <label for="certificate">Certificate</label>
+                </div>
+            </div>
+
+            <div class="course-grid">
+                <article class="course-card">
+                    <img src="web.png" alt="A group of people working on laptops." loading="lazy">
+                    <div class="card-content">
+                        <h3>Modern Web Development Bootcamp</h3>
+                        <p class="rating">⭐️⭐️⭐️⭐️ (4.5)</p>
+                        <p class="instructor">by Expert Instructor</p>
+                        <p class="price">$199</p>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <img src="web1.png" alt="Student walking with books, focusing on graphic design." loading="lazy">
+                    <div class="card-content">
+                        <h3>Graphic Design Masterclass</h3>
+                        <p class="rating">⭐️⭐️⭐️⭐️⭐️ (5.0)</p>
+                        <p class="instructor">by Design Pro</p>
+                        <p class="price">$149</p>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <img src="web3.png" alt="Close up on code editor screen showing business analytics data." loading="lazy">
+                    <div class="card-content">
+                        <h3>Business Analytics Fundamentals</h3>
+                        <p class="rating">⭐️⭐️⭐️⭐️ (4.1)</p>
+                        <p class="instructor">by Data Expert</p>
+                        <p class="price">$299</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Inquire About Team Pricing</h2>
+            <form class="inquiry-form">
+                <div>
+                    <label for="team-name">Team Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="team-name" name="team-name" placeholder="Your Company/Team Name" required>
+                </div>
+                <div>
+                    <label for="team-email">Work Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="team-email" name="team-email" placeholder="work@company.com" required>
+                </div>
+                <div>
+                    <label for="team-size">Team Size (Approx.)</label>
+                    <select id="team-size" name="team-size">
+                        <option value="1-5">1-5 members</option>
+                        <option value="6-20">6-20 members</option>
+                        <option value="20+">20+ members</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="inquiry-message">Your Message</label>
+                    <textarea id="inquiry-message" name="inquiry-message" rows="4" placeholder="How can we help your team?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit Inquiry</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h4>Learnify</h4>
+                <p>The leading platform for online education, helping professionals upskill and teams grow.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>support@learnify.com</p>
+                <p>(+1) 123-456-7890</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Learnify, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
